@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+    line-height: 1.6;
+}
+
+/* ========== NAVIGATION MENU ========== */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+/* Scrolled state (added by JavaScript) */
+#navbar.scrolled {
+    background: #1e293b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#navbar.scrolled .logo a {
+    color: white;
+}
+
+#navbar.scrolled .nav-menu a {
+    color: #e2e8f0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1e293b;
+    transition: color 0.3s ease;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+/* ========== HOVER EFFECTS ========== */
+.nav-menu a:hover {
+    color: #3b82f6;
+    transform: translateY(-2px);
+}
+
+/* Scrolled state hover */
+#navbar.scrolled .nav-menu a:hover {
+    color: #60a5fa;
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+    margin-top: 70px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #1e293b;
+}
+
+.content p {
+    margin-bottom: 1rem;
+    color: #334155;
+}
+
+.content ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    color: #334155;
+}
+
+.content li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .content {
+        padding: 2rem 1rem;
+    }
+}

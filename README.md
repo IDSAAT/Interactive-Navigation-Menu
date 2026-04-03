@@ -2,8 +2,7 @@ Interactive-Navigation-Menu.
 A responsive, fixed navigation menu that changes appearance on scroll and hover. Built with vanilla HTML, CSS, and JavaScript.
 
 📌 Live Demo
-
-[View Live Demo](https://your-demo-link.netlify.app)
+View Live Demo at "https://melodious-fairy-c568b4.netlify.app/"
 
 🎯 Features
 
@@ -50,5 +49,5 @@ MIT License: feel free to use, modify and distribute.
 👤 Author
 Idu Samuel
 GitHub: @IDSAAT
-Email: sammieidu@gmail.com
+Email: officialcybermonk0@gmail.com
    
